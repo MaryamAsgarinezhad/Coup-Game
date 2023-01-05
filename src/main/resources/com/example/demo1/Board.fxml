@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.BoardController">
+   <children>
+      <ImageView fitHeight="654.0" fitWidth="982.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../background.jpeg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="438.0" layoutY="25.0" prefHeight="224.0" prefWidth="534.0">
+         <children>
+            <HBox prefHeight="105.0" prefWidth="545.0">
+               <children>
+                  <ImageView fx:id="im" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im1" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im2" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im3" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im4" fitHeight="114.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im5" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im6" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox prefHeight="110.0" prefWidth="545.0">
+               <children>
+                  <ImageView fx:id="im7" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im8" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im9" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im10" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im11" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im12" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="im13" fitHeight="115.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fx:id="Summary" fitHeight="252.0" fitWidth="425.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../summary.png.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Card1" fitHeight="135.0" fitWidth="90.0" layoutX="183.0" layoutY="440.0" onMouseClicked="#exchangeLeft" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Card2" fitHeight="135.0" fitWidth="90.0" layoutX="321.0" layoutY="440.0" onMouseClicked="#exchangeRight" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="mssg" layoutX="14.0" layoutY="604.0" prefHeight="44.0" prefWidth="968.0" text="Messages to player will be written here !" textFill="#8a0000">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <HBox layoutX="14.0" layoutY="282.0" prefHeight="60.0" prefWidth="689.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="21.0" prefWidth="147.0" text="Player Name :" textFill="#8a0000">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="147.0" text="Coins :" textFill="#8a0000">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="147.0" text="Cards :" textFill="#8a0000">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="37.0" />
+            <VBox prefHeight="84.0" prefWidth="142.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="147.0" text="Player A">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bCoin" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bCard" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </VBox>
+            <VBox prefHeight="84.0" prefWidth="142.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="147.0" text="Player B">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cCoin" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cCard" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="84.0" prefWidth="142.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="147.0" text="Player C">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dCoin" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dCard" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="84.0" prefWidth="142.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="147.0" text="Deck">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="deckCoin" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="deckCard" prefHeight="21.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <MenuButton fx:id="taction" layoutX="79.0" layoutY="550.0" mnemonicParsing="false" text="Take Action">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Coup">
+               <graphic>
+                  <MenuButton mnemonicParsing="false">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#coupA" text="A" />
+                      <MenuItem mnemonicParsing="false" onAction="#coupB" text="B" />
+                      <MenuItem mnemonicParsing="false" onAction="#coupC" text="C" />
+                    </items>
+                  </MenuButton>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" text="Assassinate">
+               <graphic>
+                  <MenuButton mnemonicParsing="false">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#killA" text="A" />
+                      <MenuItem mnemonicParsing="false" onAction="#killB" text="B" />
+                      <MenuItem mnemonicParsing="false" onAction="#killC" text="C" />
+                    </items>
+                  </MenuButton>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" text="Steal">
+               <graphic>
+                  <MenuButton mnemonicParsing="false">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Steal_A" text="A" />
+                      <MenuItem mnemonicParsing="false" onAction="#Steal_B" text="B" />
+                      <MenuItem mnemonicParsing="false" onAction="#Steal_C" text="C" />
+                    </items>
+                  </MenuButton>
+               </graphic></MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#income" text="Income" />
+          <MenuItem mnemonicParsing="false" onAction="#foreignAid" text="Foreign Aid" />
+            <MenuItem mnemonicParsing="false" onAction="#tax" text="Tax" />
+            <MenuItem mnemonicParsing="false" onAction="#exchange" text="Exchange" />
+        </items>
+      </MenuButton>
+      <Label fx:id="Label1" layoutX="182.0" layoutY="575.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: #f2c253;" />
+      <Label fx:id="Label2" layoutX="321.0" layoutY="575.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: #f2c253;" />
+      <VBox fx:id="vbox" layoutX="79.0" layoutY="440.0" prefHeight="114.0" prefWidth="94.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="93.0" style="-fx-background-color: #f2c253;" text="Select 2 cards:" />
+            <ListView fx:id="listView" prefHeight="67.0" prefWidth="94.0" />
+            <Button fx:id="btn" mnemonicParsing="false" onAction="#choose" prefHeight="25.0" prefWidth="96.0" text="Choose" />
+         </children>
+      </VBox>
+      <Label fx:id="labbbb" layoutX="79.0" layoutY="575.0" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: #f2c253;" text="Coins :" />
+      <Label fx:id="personCoins" layoutX="126.0" layoutY="575.0" prefHeight="17.0" prefWidth="49.0" />
+      <VBox layoutX="784.0" layoutY="327.0" prefHeight="252.0" prefWidth="181.0" style="-fx-border-color: #f2c253;">
+         <children>
+            <Label prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #f2c253;" text="              &quot;Event Recorder&quot;" />
+            <TextArea fx:id="eventRecorder" prefHeight="226.0" prefWidth="179.0" />
+         </children>
+      </VBox>
+      <Label fx:id="r" layoutX="19.0" layoutY="555.0" prefHeight="17.0" prefWidth="56.0" />
+      <Button fx:id="nxt" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="75.0" text="Next" />
+      <MenuButton fx:id="react" layoutY="551.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="React">
+        <items>
+            <MenuItem mnemonicParsing="false" text="Player to Kill">
+               <graphic>
+                  <MenuButton mnemonicParsing="false">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#Kill1" text="1" />
+                      <MenuItem mnemonicParsing="false" onAction="#Kill2" text="2" />
+                    </items>
+                  </MenuButton>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#Block_Stealing2" text="Block_Stealing2(Captain)" />
+            <MenuItem mnemonicParsing="false" onAction="#Block_Stealing1" text="Block_Stealing1(Ambassador)" />
+            <MenuItem mnemonicParsing="false" onAction="#challenge" text="Challenge" />
+            <MenuItem mnemonicParsing="false" onAction="#Block_ForeignAid" text="Block_ForeignAid" />
+            <MenuItem mnemonicParsing="false" onAction="#Block_Assassination" text="Block_Assassination" />
+            <MenuItem mnemonicParsing="false" onAction="#No_Reaction" text="No_Reaction" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
